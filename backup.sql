@@ -19,4 +19,4 @@ create table credentials(
   createdAt timestamp default CURRENT_TIMESTAMP
 );
 
-alter table credentials add constraint fk user_credential foreign key(user) references users(id);
+alter table credentials add constraint fk_user_credential foreign key(user) references users(id);
